@@ -72,24 +72,24 @@ function fetchUser() {
                 if (repo_data.message === "Not Found") {
                     repo_details.innerHTML = `
                     <div class="item_">
-                        <div class="repo_name">devAmit</div>
+                        <div class="repo_name"></div>
                         <div class="repo_details_">
                             <div class="info_ star">
-                                <i class="fa fa-star-o"></i>10
+                                <i class="fa fa-star-o"></i>
                             </div>
                             <div class="info_ fork">
-                                <p><i class="fa fa-code-fork"></i>30</p>
+                                <p><i class="fa fa-code-fork"></i></p>
                             </div>
                             <div class="info_ size">
-                                <p><i class="fa fa-file"></i>3000kb</p>
+                                <p><i class="fa fa-file"></i></p>
                             </div>
                         </div>
                     </div>                
                     `
                     user_img.innerHTML = `<img src="images/github_logo.png">`;
-                    userName.innerHTML = `devAmit`;
-                    followers_.innerHTML = "500";
-                    follow_.innerHTML = "50";
+                    userName.innerHTML = ``;
+                    followers_.innerHTML = "";
+                    follow_.innerHTML = "";
                 } else {
                     let repo_Data = repo_data.map(item => {
                         console.log(item);
